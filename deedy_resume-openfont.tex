@@ -1,0 +1,349 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+
+%     TITLE NAME
+\namesection{}{Emily Malcolm-White}{ 
+\href{mailto:emilybmwhite@gmail.com}{emilybmwhite@gmail.com} \textbullet{} 530-574-5994 \\
+%5059 Shelburne Rd, Apt 2, Shelburne, VT 05482 \\
+\vspace{5pt}
+%\urlstyle{same}\url{https://sites.google.com/ucdavis.edu/ebmwhite/} \\
+}
+
+
+%     Highlights
+\flushleft
+\section{Highlights}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\raggedright
+
+\item passionate educator and student success specialist with 6 years experience supporting university-level students in mathematics, statistics, and R programming; takes pride in utilizing evidence-based best-practices for instruction and student support
+%\item developed and taught several classes entirely online (including creating video content for students and hosting online office hours. 
+\item experienced at designing curriculum and developing functional and aesthetically-pleasing educational materials with an emphasis on using field specific, real-world examples;  skilled in developing online coursework and digital tools
+\item committed to fostering a student-centered and inclusive learning environment
+%\item utilizes exceptional interpersonal skills to develop rapport with students of diverse background and skill sets; %work with students on self-advocacy, goal clarification, motivation, time management, study skills and mathematics/statistics content 
+%\item innovative data analyst with experience collecting, cleaning, analyzing, and reporting on a wide variety of data%, including educational institution data
+%\item strong verbal and written communication skills; able to communicate well with both technical and non-technical audiences internally and externally
+%\item strong programming skills with experience writing code using best practices for reproducibility (version control, automated reporting, etc.), self motivated to learn new technical skills
+%\item dedicated to creating an accurate, beautiful, and functional end result  
+%\item team player with exceptional interpersonal and communication skills
+%\item dedicated to fostering a student-centered learning environment utilizing   %based on mutual respect and collaboration  
+%\item exceptional problem-solver who takes initiative to develop innovative solutions, and thrives on continuous improvement 
+%\item committed to diversity and inclusion in all that I do and improving access to higher education from underrepresented individuals and groups
+%\item better experiences for students
+%\item ever-curious about learning new skills and technologies; particularly interested in continuing to develop skill in 
+%\item strong customer service skills, able to tailor content to both educational and professional contexts
+\end{tightemize}
+
+
+%     EDUCATION
+
+\section{Education} 
+\begin{tabular}{p{1.9cm}|l}
+2014 & \runsubsection{Master of Science in Statistics} \\
+& \descript{University of Victoria}   \\
+& Victoria, BC, Canada \\[0.5cm]
+2012 & \runsubsection{Bachelor of Science in Applied Mathematics and Statistics} \fontspec[Path = fonts/lato/]{Lato-Lig} with a  
+Certificate in Business \\
+& \descript{University of Guelph}\\
+& Guelph, ON, Canada \\
+& \fontspec[Path = fonts/lato/]{Lato-LigIta}  Award for Highest Cumulative GPA of all Mathematics and Statistics Graduates  \\
+\end{tabular}
+\sectionsep
+
+
+%\runsubsection{PhD in Applied Mathematics (in progress)} \\
+%\descript{University of Vermont}
+%\location{ Burlington, VT, USA}
+%\sectionsep
+
+%\runsubsection{MS in Statistics} \newline
+%\descript{University of Victoria}
+%\location{Dec 2014 | Victoria, BC, Canada}
+%%Thesis: "Evaluating the Effect of Recycled Individuals in the Jolly Seber Model with Tag Loss``
+%\sectionsep
+%
+%\runsubsection{BS in Applied Mathematics and Statistics} 
+%\fontspec[Path = fonts/lato/]{Lato-Bol} with a  
+%Certificate in Business \\
+%\descript{University of Guelph}
+%\location{Dec 2012 | Guelph, ON, Canada}
+%Award for Highest Cumulative GPA of all Statistics Graduates 2012
+%\sectionsep
+
+
+
+
+
+%     TEACHING EXPERIENCE
+
+\section{Teaching Experience}
+\begin{tabular}{p{1.9cm}|p{0.85\textwidth}}
+2019 - & \vspace{-8pt} \runsubsection{ Math \& Statistics Lecturer} \\
+& \vspace{-8pt} \descript{Middlebury College, Department of Mathematics } \\
+& Middlebury, VT, USA \\
+& \vspace{-8pt} \begin{tightemize}
+\item instructing Introduction to Statistical Science, Introduction to Data Science, and Calculus I
+\end{tightemize}\vspace{-20pt} \\[0.5cm]
+2019 -  & \vspace{-8pt}  \runsubsection{Instructor} \\
+& \vspace{-8pt}  \descript{Software Carpentry}   \\ 
+& Various Locations \\[0.25cm] 
+2015 - 2019 & \vspace{-8pt} \runsubsection{Math \& Statistics Lecturer / Learning Specialist } \\
+& \vspace{-8pt} \descript{University of California Davis, Academic Assistance and Tutoring }\\
+& Davis, CA, USA\\
+& \vspace{-8pt} \begin{tightemize}
+\item instructed Developmental Mathematics (Algebra, Pre-Calculus, Trigonometry), co-requisite Calculus, and Introductory Statistics courses utilizing evidence-based best-practices of teaching; often using \newline active learning, flipped classroom design, and instructional technology (Canvas, PollEverywhere, Shiny, YouTube, live coding, etc.) to enhance the student experience
+\item developed curriculum and materials for an new individualized Algebra/Pre-calculus program for incoming freshman taught entirely online; developed online instructional videos, hosted one-on-one support \newline meetings with students, tracked student success and progress, often collaborated with other invested parties (other instructors, athletics staff, student housing, etc). 
+\item received {\fontspec[Path = fonts/lato/]{Lato-LigIta} Educational Opportunity Teaching Award} for making a difference in the lives of first generation, low-income students (student nominated)
+%\item used strong interpersonal skills and adoptive approaches to communicate and establish effective working relationships with students of varying skills levels, cultural backgrounds and perspectives %committed serving a diverse student population, paying particular attention to being inclusive to historically underrepresented groups
+%\item participated in many professional development trainings including ``Coaching Students to Success", ``Developing Deeper Advising Relationships", and ``Student Support for First-Generation College Students"  
+\end{tightemize} \vspace{-10pt} \\[0.25cm]
+2013 - 2014 & \vspace{-8pt} \runsubsection{Instructor \& Teaching Assistant} \\
+& \vspace{-8pt} \descript{University of Victoria, Department of Mathematics and Statistics }\\
+&Victoria, BC, Canada\\
+& \vspace{-8pt} \begin{tightemize}
+\item stand-alone instructor an \emph{Introduction to Statistics for Business} course 
+\item led weekly tutorials in R for students registered in Introductory Statistics courses 
+%\item assisted students in the Math and Statistics Drop-In Room 
+%\item participated in pedagogy training through the Learning and Teaching Center 
+\end{tightemize}\vspace{-10pt}\\ 
+\end{tabular}
+\sectionsep
+
+
+%\runsubsection{ Visiting Math \& Statistics Lecturer } \\
+%\descript{Middlebury College, Department of Mathematics }
+%\location{2019-2020 | Middlebury, VT, USA}
+%\begin{tightemize}
+%\item instructed Introduction to Statistical Science, Intro to Data Science, Calculus I
+%\end{tightemize}
+%\sectionsep
+
+%\runsubsection{ Math \& Statistics Lecturer / Learning Specialist } \\
+%\descript{UC Davis, Academic Assistance and Tutoring }
+%\location{2015-2019 | Davis, CA, USA}
+%%\vspace{\topsep}
+%\begin{tightemize}
+%
+%%\item utilized strong technical skills to analyze student data for trends and patterns. Projects included ``Retention and Success of MAT D (Algebra II) Students" and ``Co-instruction in Calculus to Bridge the Opportunity Gap". Data cleaning and analysis was done in R/RMarkdown with an emphasis on creating internal reports that are easily reproduced each quarter with minimal effort.   
+%
+%\item instructed Developmental Mathematics (Pre-Algebra, Algebra, Pre-Calculus, Trigonometry, Pre-Statistics), Calculus,  and Introductory Statistics courses utilizing evidence-based best-practices of teaching; often using active learning, flipped classroom design, and instructional technology (Canvas, PollEverywhere, Shiny, YouTube, live coding, etc.) to enhance the student experience
+%
+%%\item instructed pre-requisite or co-requisite mathematics and statistics courses utilizing evidence-based best-practices of teaching; often using active learning, flipped classroom design, and instructional technology (Canvas, PollEverywhere, Shiny, YouTube, live coding, etc.) to enhance the student experience
+%
+%\item utilized strong interpersonal skills and adoptive approaches to communicate and establish effective working relationships with students of varying skills levels, cultural backgrounds and perspectives%; utilized knowledge of development math classes, math placement and academic programs to help students decide which math class is the right fit for them at UC Davis
+%
+%%\item assist students in the Math and Stats Drop-In Room with problems from a diverse variety of undergraduate mathematics, statistics, and research methods courses
+%
+%%often refer students to campus resources as appropriate 
+%
+%%helped students navigate critical transition stages including high school or community college to first year undergraduate coursework;
+%
+%
+%
+%
+%
+%
+%%\item developed a training workshop for our math tutors which focused on how to help students learning R and RStudio, including troubleshooting common errors and tutoring pedagogy for programming languages. 
+%
+%%\item  gained experience with online learning management systems such as Canvas
+%
+%%\item %; continually improving lesson plans and teaching strategies with this goal in mind %provided mentorship to students in the Educational Opportunity Program (EOP) and Guardian Scholars Program for former foster youth 
+%
+%\end{tightemize}
+%\sectionsep
+%
+%
+%
+%\runsubsection{Adjunct Instructor \& Teaching Assistant} \\
+%\descript{University of Victoria, Math and Stats Department}
+%\location{Sept 2014 - Dec 2014 | Victoria, BC, Canada}
+
+%\sectionsep
+
+
+%     Professional Development 
+\section{Professional Development}
+\begin{tabular}{p{4.1cm}l}
+\location{Teaching and Pedagogy}	& Crowdsourced Notes in the Classroom, Workshop at Middlebury College (2019) \\
+	 						& Software Carpentry Instructor Training (2019) \\
+							& Best Practices for Video Creation for Education,  Workshop at UC Davis (2018)\\
+							& Pedagogy for Mathematics, Course at UVic Learning and Teaching Center  (2014)\\
+\location{Diversity and Inclusion} 	&  Inclusive Practitioners Program, Workshop Series at Middlebury College (2019) \\
+							& Veteran Ally Training, Workshop at UC Davis (2017) \\
+							& LGBTQIA Ally Training I \& II,  Workshop Series at UC Davis (2017)\\
+	 						& Supporting First-Generation College Students,  Workshop at UC Davis (2016) \\
+\location{Advising and Coaching}	& Coaching Students to Success I \& II, Workshop Series at UC Davis (2018)\\
+							%&  Developing Deeper Advising Relationships, Workshop at UC Davis (2016) \\
+\end{tabular}
+\sectionsep
+
+%     AWARDS
+%\section{Awards}
+%\begin{tabular}{p{1.9cm}|l}
+%2017 & Educational Opportunity Program Teaching Award \\
+%2012 & Award for Highest Cumulative GPA of all Mathematics and Statistics Graduates \\
+%\end{tabular}
+%\sectionsep
+
+%     SOFTWARE SKILLS
+\section{Software Skills}
+\location{Computing} R, Git, Unix, MATLAB, SAS \newline
+\location{Typesetting} RMarkdown,  \LaTeX \newline
+\location{Education} Canvas, Blackboard, Moodle, PollEverywhere, YouTube (video creation), Gradescope, Slack, Piazza \newline
+\location{Other} Microsoft Suite (Word, Excel, Access, Outlook), Google Suite (Sheets, Pages, Gmail, Forms), Qualtrics \newline
+%\sectionsep
+
+%    PUBLISHED WORK
+\section{Published Work}
+\begin{tabular}{p{1.9cm}|p{0.8\textwidth}}
+In Review & \fontspec[Path = fonts/lato/]{Lato-Reg}{E Malcolm-White}, \normalfont LLE Cowen, and CR McMahon. Complete tag loss in capture-recapture studies \newline affects abundance estimates: an elephant seal case study. \fontspec[Path = fonts/lato/]{Lato-LigIta}{Ecology and Evolution.}  \\
+\end{tabular}
+\sectionsep
+
+
+
+%     OTHER EXPERIENCE
+\section{Other Experience}
+\begin{tabular}{p{1.9cm}|l}
+%2011 - 2012 & \runsubsection{Bounce Back Program Facilitator} \\
+%& \descript{University of Guelph Student Life}   \\
+%& Guelph, ON, Canada \\[0.5cm]
+2014 & \runsubsection{Statistical Consultant} \\
+	& \descript{Sendwithus} \\
+	& Victoria, BC, Canada \\[0.5cm]
+2012 & \runsubsection{Merchant Acquisition Intern} \\
+& \descript{American Express Canada}\\
+& Markham, ON, Canada \\[0.5cm]
+2011 & \runsubsection{Services Product Marketing Co-ordinator} \\
+& \descript{Research In Motion (BlackBerry)}\\
+& Waterloo, ON, Canada \\[0.5cm]
+ 2010 & \runsubsection{Knowledge Management Specialist}\\
+& \descript{Research In Motion (BlackBerry)} \\
+& Waterloo, ON, Canada \\
+%2005 - 2009 & \runsubsection{Food and Beverage Server} \\
+%& \descript{Yin's Restaurant} \\
+%& Waterford, ON Canada \\
+\end{tabular}
+\sectionsep
+
+% \runsubsection{Bounce Back Program Facilitator} \\
+% \descript{University of Guelph Student Life}
+% \location{Jan 2012 - Dec 2012 | Guelph, ON, Canada}
+% \begin{tightemize}
+% \item utilized and developed exceptional interpersonal skills through conducting one-on-one meetings with students who self-identified as struggling with the transition from high school to the university setting, referred students to campus resources as appropriate
+% %\item received extensive training on active listening, campus resources, and mental health
+% \end{tightemize}
+% \sectionsep
+%
+%\runsubsection{Merchant Acquisition Intern} \\
+%\descript{American Express Canada}
+%\location{Summer 2012 | Markham, ON, Canada}
+%%\begin{tightemize}
+%%\item independently gathered data from internal and external sources to build a large database in Access
+%%\item built a new innovative framework (GLM) for predicting revenue from potential new merchant signings using R 
+%%\item created an informative and visually appealing automated report for senior executives using RMarkdown
+%%\end{tightemize}
+%\sectionsep
+%
+%\runsubsection{Services Product Marketing Co-ordinator} \\
+%\descript{BlackBerry (Research In Motion)}
+%\location{Summer 2011 | Waterloo, ON, Canada}
+%%\begin{tightemize}
+%%\item analyzed BlackBerry data pricing programs performance in Thailand which was presented to the Senior Director level, results and insights affected BlackBerry pricing strategies 
+%%\item diligently followed trends in the telecommunications industry and communicated their implications on BlackBerry strategy through the team's internal blog
+%%\end{tightemize}
+%\sectionsep
+%
+%\runsubsection{Services Product Marketing Co-ordinator} \newline
+%\descript{BlackBerry (Research In Motion)}
+%\location{May 2010 - Dec 2010 | Waterloo, ON, Canada}
+%%\begin{tightemize}
+%%\item quickly and diligently compiled thorough literature reviews on major topics of interest to senior management within the Hardware Quality Department; utilized many different resources including academic research, industry resources, and technical standards.   
+%%\item conducted training seminars for employees on best practices for sharing information on the internal wiki
+%%\end{tightemize}
+%\sectionsep
+%
+%\runsubsection{Food and Beverage Server} \newline
+%\descript{Yin's Restaurant}
+%\location{Sept 2005 - Aug 2009 | Waterford, ON, Canada}
+%%\begin{tightemize}
+%%\item developed strong customer service skills 
+%%\item juggled multiple priorities while working in a high-paced environment 
+%%\end{tightemize}
+%\sectionsep
+
+
+%     VOLUNTEER EXPERIENCE
+\section{Volunteer Experience}
+\begin{tabular}{p{1.9cm}|l}
+2017 - 2019 & \runsubsection{Mentor} \\
+& \descript{Guardian Scholars Program} \\
+&  program for former foster youth attending UC Davis \\[0.5cm]
+2016 - 2019 & \runsubsection{Weaving \& Sewing Instructor} \\
+& \descript{UC Davis Craft Center}   \\
+\end{tabular}
+\sectionsep
+
+%     INTERESTS
+\section{Interests}
+American Sign Language, weaving, design
+\sectionsep
+
+
+%     REFERENCES
+\section{References} 
+available upon request
+
+%\end{minipage} 
+
+\end{document}
